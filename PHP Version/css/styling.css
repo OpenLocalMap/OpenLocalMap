@@ -1,0 +1,460 @@
+/*
+//    OpenLocalMap OpenSource web mapping for local government
+//    Copyright (C) <2014>  <Ben Calnan>
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+.pointer{
+cursor: pointer;
+
+}
+.draw-box{
+   position: absolute; 
+   top:10px; 
+   z-index:9999999;
+}
+
+
+
+#IndexMapLLPGResults
+{
+    z-index:9999999;
+    visibility:hidden;
+    position:absolute;
+    background: rgba(255,255,255,1);
+    overflow-y: auto;
+    height: 200px;
+    width: 275px;
+    display: block;
+    border-style:solid; 
+    border-width:1px;
+    font-size:12px;
+}
+
+#SearchDivArea
+{
+    position: absolute;    
+     background-color: white;
+        -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        top: 10px;
+        right:1%;
+        z-index:9999999;
+}
+
+
+#measureResults
+{
+    position:absolute;
+    visibility:hidden;
+    background-color: white;
+        -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        bottom: 5%;
+        left:26%;
+        padding:10px;
+        width:220px;
+        height:76px;
+        z-index:9999999;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+}
+
+#drawBox
+{
+    position:absolute;
+    visibility:hidden;
+    background-color: white;
+        -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        bottom: 5%;
+        left:26%;
+        padding:10px;
+        width:220px;
+        height:76px;
+        z-index:9999999;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+}
+
+    .ol-popup {
+        display: none;
+        position: absolute;
+        background-color: white;
+        -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid #cccccc;
+        bottom: 12px;
+        left: -50px;
+      }
+      .ol-popup:after, .ol-popup:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      .ol-popup:after {
+        border-top-color: white;
+        border-width: 10px;
+        left: 48px;
+        margin-left: -10px;
+      }
+      .ol-popup:before {
+        border-top-color: #cccccc;
+        border-width: 11px;
+        left: 48px;
+        margin-left: -11px;
+      }
+      .ol-popup-closer {
+        text-decoration: none;
+        position: absolute;
+        top: 1px;
+        right: 5px;
+      }
+      .ol-popup-closer:after {
+        content: "✖";
+      }
+      
+
+ .ol-zoom .ol-zoom-out {
+  margin-top: 202px;
+  
+  
+}
+
+.ol-zoom{
+    position:absolute;
+    top: 44px;
+    background-color: white;
+    //margin-top:300px;
+}
+
+/*.ol-zoom-extent {
+     margin-top: 200px;
+}*/
+
+ .ol-zoomslider {
+  background-color: white;
+  position:absolute;
+  top:74px;
+  height:192px;
+}
+
+.ol-touch .ol-zoom .ol-zoom-out { 
+  margin-top: 212px;
+}
+ .ol-touch .ol-zoomslider {
+  top: 2.75em;
+ }
+ 
+/* .ol-mouse-position {
+     color: white;
+     background-color: black;
+ }*/
+
+
+.no-close .ui-dialog-titlebar-close {
+display: none;
+}
+
+.popup{
+  background:black;
+  width:250px;
+  height:200px;
+  border-radius:5px;
+}
+
+#itemContainer{    
+    width:300px;
+    max-height:300px;
+    overflow-y: auto;
+}
+
+.itemFeatureInfo{
+    border:solid 1px grey;
+    text-align:left;
+    padding:10px; 
+    margin:2px;
+ }
+     /*TO COPY JQUERY UI TOC STYLING*/
+ .itemHeader{
+     color: #1C94C4;
+     font: 17.6px Quattrocento Sans;     
+     font-weight:700;
+     
+ }
+ 
+ .attributeKey{
+     color: #EB8F00;
+     font: 17px Quattrocento Sans;
+     font-weight:600;
+     
+ }
+ 
+ 
+  .attributeValue{
+     padding-left:1px;
+     font: 17px Quattrocento Sans;  
+ }
+ #Reset{
+    font: 12px Quattrocento Sans;
+     font-weight:300;
+     color:blue;
+ }
+ .downloadIcons{  
+     text-align:center;
+     width:32%;
+     float:left;
+     padding-top:10px;
+ 
+ }
+ 
+ .Home-button {
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 4px;
+        padding: 2px;
+        background:white;
+      }
+      .ol-touch .Home-button {
+        top: 80px;
+      }
+      .Home-button a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        margin: 1px;
+        padding-top:3px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        height: 25px;
+        width: 26px;
+        background: rgba(0,60,136,0.5);
+      }
+      .ol-touch .Home-button a {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+      }
+      .Home-button a:hover {
+        background: rgba(0,60,136,0.7);
+      }
+      
+      
+ .draw-button {
+        position: absolute;
+        top: 7px;
+        left: 44px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 4px;
+        padding: 2px;
+        background:white;
+      }
+      .ol-touch .draw-button {
+        top: 80px;
+      }
+      .draw-button a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        margin: 1px;
+        padding-top:3px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        height: 25px;
+        width: 26px;
+        background: rgba(0,60,136,0.5);
+      }
+      .ol-touch .draw-button a {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+      }
+      .draw-button a:hover {
+        background: rgba(0,60,136,0.7);
+      }
+
+ .point-button {
+        visibility: hidden;
+        position: absolute;
+        top: 44px;
+
+        left: 44px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 4px;
+        padding: 2px;
+        background:white;
+      }
+      .ol-touch .point-button {
+        top: 80px;
+      }
+      .point-button a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        margin: 1px;
+        padding-top:3px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        height: 25px;
+        width: 26px;
+        background: rgba(0,60,136,0.5);
+      }
+      .ol-touch .point-button a {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+      }
+      .point-button a:hover {
+        background: rgba(0,60,136,0.7);
+      }
+
+.line-button {
+        visibility: hidden;
+        position: absolute;
+        top: 84px;
+
+        left: 44px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 4px;
+        padding: 2px;
+        background:white;
+      }
+      .ol-touch .line-button {
+        top: 80px;
+      }
+      .line-button a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        margin: 1px;
+        padding-top:3px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        height: 25px;
+        width: 26px;
+        background: rgba(0,60,136,0.5);
+      }
+      .ol-touch .line-button a {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+      }
+      .line-button a:hover {
+        background: rgba(0,60,136,0.7);
+      }
+.poly-button {
+        visibility: hidden;
+        position: absolute;
+        top: 124px;
+
+        left: 44px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 4px;
+        padding: 2px;
+        background:white;
+      }
+      .ol-touch .poly-button {
+        top: 124px;
+      }
+      .poly-button a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        margin: 1px;
+        padding-top:3px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        height: 25px;
+        width: 26px;
+        background: rgba(0,60,136,0.5);
+      }
+      .ol-touch .poly-button a {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+      }
+      .poly-button a:hover {
+        background: rgba(0,60,136,0.7);
+      } 
+      
+.measure-button {
+        position: absolute;
+        top: 7px;
+        left: 80px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 4px;
+        padding: 2px;
+        background:white;
+      }
+      .ol-touch .measure-button {
+        top: 80px;
+      }
+      .measure-button a {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+        font-weight: bold;
+        margin: 1px;
+        padding-top:3px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px;
+        height: 25px;
+        width: 26px;
+        background: rgba(0,60,136,0.5);
+      }
+      .ol-touch .measure-button a {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+        line-height: 26px;
+      }
+      .measure-button a:hover {
+        background: rgba(0,60,136,0.7);
+      }
