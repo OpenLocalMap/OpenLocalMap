@@ -5,7 +5,7 @@ This project aims to create a develop a simple web mapping application for use b
 
 The project is also aims to deliver data and Metadata if required. 
 
-The project is built in HTML5, PHP, jQuery, jQuery UI, Openlayers 3,  proj4js and uses Geoserver and a spatial database. 
+The project is built in HTML5, PHP, jQuery, jQuery UI, Openlayers 3,  proj4js and uses a WMS server (such as Geoserver) with a spatial database. 
 
 The ultimate aim is to provide a simple to use cross platform application that local government can quickly deploy to deliver spatial information. 
 
