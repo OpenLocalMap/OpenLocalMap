@@ -7,7 +7,7 @@ The application's content and style is controlled by metadata tables stored with
 
 The project is built in HTML5 (so won't work in Ie8), PHP, jQuery, jQuery UI, Openlayers 3,  proj4js and currently uses an Oracle Database to store the controlling metadata. 
 
-The WMS layers themselves need to be hosted on a wms server (such as Geoserver) with a spatial database beind it. 
+The WMS layers themselves need to be hosted on a wms server (such as Geoserver) with a spatial database behind it. 
 
 The ultimate aim is to provide a simple to use cross platform application that local government can quickly deploy to deliver spatial information. 
 
