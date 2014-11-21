@@ -1,7 +1,7 @@
 OpenLocalMap
 ============
 
-This project aims to create a develop a simple WMS based web mapping application for use by local authorities that is controlled by metadata tables stored within a database or XML.  The project is also aims provide a method to deliver data and metadata if required. 
+This project aims to create a develop a simple WMS based web mapping application for use by local authorities that is controlled by metadata tables stored within a database or XML.  The project also aims provide a method to deliver data and metadata if required. 
 
 The project is built in HTML5 (so won't work in Ie8), PHP, jQuery, jQuery UI, Openlayers 3,  proj4js and uses currently an Oracle Database. 
 
