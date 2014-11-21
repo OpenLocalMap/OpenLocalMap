@@ -3,7 +3,7 @@ OpenLocalMap
 
 This project aims to create a develop a simple WMS based web mapping application for use by local authorities or charities that can be quickly deployed to deliver spatial information. The project also aims provide a method for delivering data and metadata if required. 
 
-The application's content and style is controlled by metadata tables stored within a database or XML allowing layers to be quickly added or adjusted.  
+The application's content and style is controlled by metadata tables stored within a database or XML file allowing layers to be quickly added or adjusted.  
 
 The project is built in HTML5 (so won't work in Ie8), PHP, jQuery, jQuery UI, Openlayers 3,  proj4js and currently uses an Oracle Database to store the controlling metadata. 
 
