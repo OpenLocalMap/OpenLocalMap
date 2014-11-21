@@ -11,7 +11,7 @@ The WMS layers themselves need to be hosted on a wms server (such as Geoserver) 
 
 The ultimate aim is to provide a simple to use cross platform application that local government can quickly deploy to deliver spatial information. 
 
-There is a early version of the application adapted for Hackney Local Authroity live at www.map.hackney.gov.uk/MapHackney3
+There is a early version of the application adapted for Hackney Local Authority live at www.map.hackney.gov.uk/MapHackney3
 
 In the future hopefully this will also work with MySQL, SQLServer,  Postgresql or a local xml file. There is a also a .NET version in the pipeline and plans to replace jQueryUI with bootstrap. 
 
