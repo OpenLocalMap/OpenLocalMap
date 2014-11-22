@@ -19,7 +19,6 @@
 
 
 require_once("./includes/DBconn_Live_1.php");
-include("variableSetup.php");
 class tocCreater {
 
  
