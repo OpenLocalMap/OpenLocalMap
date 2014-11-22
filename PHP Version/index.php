@@ -39,14 +39,12 @@
             <script src="v3.0.0/build/ol.js" type="text/javascript"></script>
             <link rel="stylesheet" href="./css/styling.css" type="text/css"></link>
             <link rel="stylesheet" href="./jquery-ui-1.11.1/jquery-ui.css">
-            
+
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
             <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.1/proj4.js"></script>
             
             <script src="./js/LLPGSearch.js"></script>
-
-            
 
         <link rel="stylesheet" href="v3.0.0/resources/layout.css">
 </head>
@@ -86,11 +84,11 @@
 
 
 <?php 
-
+    include("./includes/variableSetup.php");
     require_once("./includes/tocCreater.php");
     
     $tocObject1 = new tocCreater();
-    $wmsURL = $tocObject1->wmsURL;
+    $wmsURL = wmslegendURL;
    
     $totalArray = $tocObject1->returnSectionHeadings(1);
     $level2sArray = $tocObject1->returnSectionHeadings(2);
