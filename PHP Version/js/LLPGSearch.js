@@ -14,13 +14,7 @@
 //
 //    You should have received a copy of the GNU General Public License
 //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-var serverPath = "link to map server goes here";
-var kmllink = serverPath + "wms/kml?mode=download&layers=";
-var csvlink = serverPath + "wfs?service=wfs&version=2.0.0&request=GetFeature&outputFormat=csv&typeNames=";
-var pollutionDialogString = "Disclaimer goes here";
-
-            
+       
             
                 $(function() {
                     $( ".accordion" ).accordion({
@@ -246,11 +240,6 @@ function showDownload(dataDownloadURL,MetaDownloadURL ,AllowDataDownload, AllowM
        
         
     }
-
-    
-    
-      
-            
 
 
 

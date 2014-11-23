@@ -75,15 +75,7 @@ var overlay = new ol.Overlay({
              centerCoords = ol.proj.transform([lat,lon], 'EPSG:27700', 'EPSG:3857');
 
          }
-///////////////////////////////////////////////////////////////////////////////
 
-
-///Global - Change!///////
-var wmsURL = 'link to wms goes here';
-var boundaryName = "name to give boundary";
-var boundaryWMSname = "wms boundary name";
-
-//////////////////////////////////////
 
 var imageFormat = 'image/png';
 var OpenStreetMapLayer =  new ol.layer.Tile({ 

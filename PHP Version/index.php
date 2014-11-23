@@ -43,7 +43,7 @@
             <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
             <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.1/proj4.js"></script>
-            
+            <script src="./js/variableSetup.js"></script>
             <script src="./js/LLPGSearch.js"></script>
 
         <link rel="stylesheet" href="v3.0.0/resources/layout.css">
