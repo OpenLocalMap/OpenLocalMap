@@ -26,7 +26,7 @@ class searchClass {
             public function __construct() {
                 $this->filterString = filter_input(INPUT_POST, 'filter');
                 $query = $this->createSearchQuery();   
-                $conn= new DBconn_LLPG();
+                $conn= new DBconn("LLPG");
                 $conn->setStid($query);
                 
 

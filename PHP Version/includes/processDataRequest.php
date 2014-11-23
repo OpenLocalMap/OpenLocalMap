@@ -16,8 +16,7 @@
 //    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-require_once("DBConn_LLPG.php");
-include("DBConn_Live_1.php");
+include("DBConn.php");
 require_once("queryClass.php");
 require_once("searchClass.php");
 require_once("xyCoordsLLPGClass.php");

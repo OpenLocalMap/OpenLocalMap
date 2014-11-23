@@ -24,7 +24,7 @@ class getColumnsClass {
     private $columnString; 
     
     function __construct() {
-        $this->live_DB = new DBconn_Live1;
+        $this->live_DB = new DBconn("Meta");
     }    
     function getPopUpData($layerlist){
         $layerArray = json_decode($layerlist);

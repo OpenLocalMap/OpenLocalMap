@@ -20,7 +20,7 @@ class queryClass {
  //NEEDS TO MODIFIED 
   
    public static function getLLPGSearchQuery($numofterms,$result){
-        
+       require_once 'variableSetup.php';
         $LLPGquery = "SELECT UPRN as UPRN, FLATNAME, FLATNUMBER, \"NAME\" as NAME1, STREETNUMBER as NUMBER1, STREET,POSTCODE, POSTTOWN as POSTTOWN1 ";
         $LLPGquery = $LLPGquery."FROM ".LLPGtable." WHERE"; //FROM LIVE
         
@@ -35,7 +35,7 @@ class queryClass {
                                                 $LLPGquery = $LLPGquery." CONTAINS (POSTTOWN, '".$result[0][$i]."') > 0 ";
                                             }
                                         }
-        $LLPGquery = $LLPGquery." ORDER BY STREET ASC ";//NEEDS TO BE BY FLATNAME?
+        $LLPGquery = $LLPGquery." ORDER BY STREET ASC ";
         
         return $LLPGquery;
     }

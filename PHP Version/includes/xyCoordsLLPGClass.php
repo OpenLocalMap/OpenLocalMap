@@ -38,7 +38,7 @@ class xyCoordsLLPGClass {
     }
     
     public function getXYCoordsLLPG(){
-        $xy_DB = new DBconn_LLPG();
+        $xy_DB = new DBconn("LLPG");
         $xy_DB->setStid($this->xyQuery);
         $xyCoords = $xy_DB->getSingleRow();
         $xyCoords = "{\"xyCoords\":[{\"X\":\"".$xyCoords['X']."\",\"Y\":\"".$xyCoords['Y']."\"}]}";   

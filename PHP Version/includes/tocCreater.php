@@ -18,7 +18,7 @@
 
 
 
-require_once("./includes/DBconn_Live_1.php");
+require_once("./includes/DBconn.php");
 class tocCreater {
 
  
@@ -116,7 +116,7 @@ function stripArray($totalArray, $column){
  
  
  function __construct() {
-     $this->DB_connection = new DBconn_Live1;
+     $this->DB_connection = new DBconn("Meta");
  }
  
  
