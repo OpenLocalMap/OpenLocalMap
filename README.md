@@ -21,4 +21,25 @@ Installation
 
 Openlayers3 needs to be extracted into the root directory (Available here http://openlayers.org/)
 
-To be continued once all files checked and uploaded
+
+WMS Server
+
+This application uses WMS layers hosted by a WMS server (e.g. Geoserver, MapServer or ArcGIS server) which is set up and maintained seperately. 
+
+Database
+
+Create metadata table to hold layer information. 
+
+Run SQL for relevant db in your database and add layers as appropriate (See SQL Folder for more details and SQL Files) (not complete for all databases)
+
+Fill out the fields in the newly created metadata table as required.  
+
+
+Application 
+
+Add connection strings to wms server and database in includes/variableSetup.php and js/variableSetup.js
+
+LLPG Address module is not complete and so you be removed at present. 
+
+
+
