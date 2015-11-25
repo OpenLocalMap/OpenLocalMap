@@ -35,13 +35,14 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
         <title>OpenLocalMap</title>
-        <link rel="stylesheet" href="v3.0.0/css/ol.css" type="text/css">
-            <script src="v3.0.0/build/ol.js" type="text/javascript"></script>
-            <link rel="stylesheet" href="./css/styling.css" type="text/css"></link>
-            <link rel="stylesheet" href="./jquery-ui-1.11.1/jquery-ui.css">
-
-            <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-            <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+        
+            <link href="http://cdnjs.cloudflare.com/ajax/libs/ol3/3.11.1/ol.css" rel="stylesheet"  type="text/css">
+            <link href="./css/styling.css" type="text/css" rel="stylesheet"></link>
+            <link href="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.1/jquery-ui.css" rel="stylesheet" >
+            
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/ol3/3.11.1/ol.js" type="text/javascript"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.1/proj4.js"></script>
             <script src="./js/variableSetup.js"></script>
             <script src="./js/LLPGSearch.js"></script>
