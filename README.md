@@ -5,11 +5,11 @@ This project aims to create a develop a simple WMS based web mapping application
 
 The application's content and style is controlled by metadata tables stored within a database or XML file allowing layers to be quickly added or adjusted.  
 
-The project is built in HTML5 (so won't work in Ie8), PHP, jQuery, jQuery UI, Openlayers 3,  proj4js and currently uses an Oracle Database to store the controlling metadata. 
+The project is built in HTML5, PHP,Openlayers 3,  proj4js and uses an Oracle Database to store the controlling metadata. 
 
 The WMS layers themselves need to be hosted on a wms server (such as Geoserver) with a spatial database behind it. 
 
-The ultimate aim is to provide a simple to use cross platform application that local government can quickly deploy to deliver spatial information. 
+The aim is to provide a simple to use cross platform application that local government can quickly deploy to deliver spatial information. 
 
 There is a early version of the application adapted for Hackney Local Authority live at www.map.hackney.gov.uk/MapHackney3
 
